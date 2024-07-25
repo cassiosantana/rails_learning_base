@@ -1,24 +1,33 @@
-# README
+# Rails Learning Base
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository serves as a foundation for exploring and learning new technologies integrated with Ruby on Rails. The main goal is to provide a simple starting point for experimenting with and implementing various features and gems in a Rails context.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+1. **Install Project Dependencies:**
 
-* System dependencies
+    ```bash
+       bundle install
+    ```
 
-* Configuration
+2. **Install Tailwind CSS:**
 
-* Database creation
+    ```bash
+      ./bin/rails tailwindcss:install
+    ```
 
-* Database initialization
+3. **Install Flowbite:**
+    ```bash
+      npm install flowbite
+    ```
 
-* How to run the test suite
+4. **Building the Project:**
+    ```bash
+      ./bin/dev
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
+If you wish to contribute to the project, feel free to open a pull request with your improvements and fixes. Your contributions are welcome!
 
-* Deployment instructions
-
-* ...
+## License
+This project is licensed under the MIT License.
