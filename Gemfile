@@ -52,6 +52,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows]
+  gem "ffaker", "~> 2.23"
   gem "foreman", "~> 0.88.1"
   gem "rspec-rails", "~> 6.1", ">= 6.1.3"
 end
