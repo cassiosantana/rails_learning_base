@@ -12,7 +12,10 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <div>
+      <%= render "layouts/navbar" %>
+    </div>
+    <main class="container mx-auto mt-16 px-5 flex max-w-screen-xl">
       <%= yield %>
     </main>
   </body>
