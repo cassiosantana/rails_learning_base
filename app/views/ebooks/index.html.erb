@@ -1,0 +1,39 @@
+<div class="w-full">
+  <% content_for :title, "Ebooks" %>
+
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="font-bold text-2xl">Ebooks</h1>
+    <%= link_to "New ebook", new_ebook_path, class: "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" %>
+  </div>
+
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <tr>
+        <th scope="col" class="px-6 py-3">Title</th>
+        <th scope="col" class="px-6 py-3">Author</th>
+        <th scope="col" class="px-6 py-3">Genre</th>
+        <th scope="col" class="px-6 py-3">Price</th>
+        <th scope="col" class="px-6 py-3">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @ebooks.each do |ebook| %>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <%= ebook.title %>
+          </th>
+          <td class="px-6 py-4"><%= ebook.author %></td>
+          <td class="px-6 py-4"><%= ebook.genre %></td>
+          <td class="px-6 py-4"><%= ebook.price %></td>
+          <td class="px-6 py-4">
+            <%= link_to "Show", ebook_path(ebook), class: "text-indigo-600 hover:text-indigo-900" %> |
+            <%= link_to "Edit", edit_ebook_path(ebook), class: "text-indigo-600 hover:text-indigo-900" %> |
+            <%= link_to "Delete", ebook_path(ebook), data: {turbo_method: "delete", turbo_confirm: "Are you sure?" }, class: "text-red-600 hover:text-red-900" %>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
