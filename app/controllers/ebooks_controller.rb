@@ -5,7 +5,7 @@ class EbooksController < ApplicationController
 
   # GET /ebooks or /ebooks.json
   def index
-    @ebooks = Ebook.all
+    @ebooks = Ebook.page(params[:page]).per(5)
   end
 
   # GET /ebooks/1 or /ebooks/1.json
