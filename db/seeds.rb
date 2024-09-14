@@ -4,7 +4,7 @@ require "ffaker"
 
 Ebook.destroy_all
 
-5.times do
+500.times do
   Ebook.create!(
     title: FFaker::Book.title,
     author: FFaker::Book.author,
