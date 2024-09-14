@@ -2,7 +2,8 @@
 
 This repository serves as a foundation for exploring and learning new technologies integrated with Ruby on Rails. The main goal is to provide a simple starting point for experimenting with and implementing various features and gems in a Rails context.
 
-![image](https://github.com/user-attachments/assets/e0cf6e26-81f3-4515-be47-cd4f7a34863b)
+![image](https://github.com/user-attachments/assets/b334a3af-4835-4148-be46-e6cf9e081a1e)
+
 
 
 ## Installation
